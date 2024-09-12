@@ -1,0 +1,70 @@
+/* Main vertical navigation container */
+.vertical-nav {
+    position: fixed; /* Keep the nav in a fixed position on the screen */
+    top: 20%;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 80%; /* Prevent the nav from overflowing the screen */
+    overflow-y: auto; /* Allow scrolling inside the nav if there are too many links */
+}
+
+/* Base styles for navigation links */
+.nav-link {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    opacity: 0.6;
+    transition: opacity 0.3s ease, font-weight 0.3s ease;
+}
+
+/* Bold and fully opaque for the active section */
+.nav-link.active {
+    font-weight: bold;
+    opacity: 1;
+}
+
+/* Indentation for sub-links (subsections) */
+.sub-link {
+    margin-left: 20px; /* Indent sub-links */
+    font-size: 16px; /* Slightly smaller font for sub-links */
+    overflow-wrap: break-word;
+    max-width: 80%;
+}
+
+/* Hover effect for links */
+.nav-link:hover,
+.nav-link:focus {
+    opacity: 0.9;
+}
+
+/* Main content wrapper for sections */
+.content-wrapper {
+    margin-left: 20px; /* Leave space for the vertical navigation */
+    padding: 20px;
+}
+
+/* Style for sections */
+.section {
+    padding: 100px 20px;
+    border-bottom: 1px solid #ddd;
+    min-height: 100vh; /* Make sections at least full height */
+    position: relative;
+}
+
+/* Sub-section styling */
+.sub-section {
+    padding: 50px 20px;
+    background-color: #f0f0f0; /* Light background for sub-sections */
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+h2 {
+    margin-top: 0;
+}
