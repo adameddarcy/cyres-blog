@@ -29,8 +29,6 @@
 .sub-link {
     margin-left: 20px; /* Indent sub-links */
     font-size: 16px; /* Slightly smaller font for sub-links */
-    overflow-wrap: break-word;
-    max-width: 80%;
 }
 
 /* Hover effect for links */
@@ -41,7 +39,7 @@
 
 /* Main content wrapper for sections */
 .content-wrapper {
-    margin-left: 20px; /* Leave space for the vertical navigation */
+    margin-left: 200px; /* Leave space for the vertical navigation */
     padding: 20px;
 }
 
@@ -67,4 +65,43 @@ h1 {
 
 h2 {
     margin-top: 0;
+}
+
+/* MEDIA QUERY FOR SMALL SCREENS */
+
+/* On smaller screens (below 1000px), display section links as dots */
+@media (max-width: 1000px) {
+    .vertical-nav {
+        left: 10px; /* Adjust the position for smaller screens */
+    }
+
+    .nav-link {
+        font-size: 0; /* Hide the text of the link */
+        width: 15px;
+        height: 15px;
+        border-radius: 50%; /* Make the link a circle */
+        background-color: black; /* Change the color of the dot */
+        display: inline-block; /* Ensure it's inline */
+    }
+
+    /* Active state: highlight the active dot */
+    .nav-link.active {
+        background-color: red; /* Highlight the active section */
+    }
+
+    /* Sub-links will remain as normal text or smaller dots */
+    .sub-link {
+        font-size: 0; /* Hide the text for subsections too */
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: grey; /* Different color for sub-sections */
+        display: inline-block;
+        margin-left: 30px; /* Indent the sub-links */
+    }
+
+    /* Active state for sub-links */
+    .sub-link.active {
+        background-color: orange; /* Different highlight for sub-section */
+    }
 }

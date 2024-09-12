@@ -16,7 +16,7 @@ const localData = [
 const LocationsTable = () => {
     return (
         <div>
-            <h1>Organisation Locations and Frequency</h1>
+            <h1>Organisation Locations and Frequency (Table I)</h1>
             <AnimatedTable data={localData}/>
         </div>
     );
