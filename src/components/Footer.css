@@ -1,0 +1,35 @@
+/* Main footer container */
+.footer {
+    background-color: #333; /* Dark background */
+    color: white; /* White text */
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Container for the icons */
+.icon-container {
+    display: flex;
+    gap: 20px; /* Space between icons */
+    margin-bottom: 10px;
+}
+
+/* Footer icons style */
+.footer-icon svg {
+    fill: #ccc; /* Grey icon color */
+    transition: fill 0.3s ease;
+}
+
+/* Hover effect for icons */
+.footer-icon:hover svg {
+    fill: white; /* Turn icons white on hover */
+}
+
+/* Footer text style */
+.footer-text {
+    font-size: 14px;
+    color: #aaa; /* Light grey text */
+    margin-top: 10px;
+}

@@ -22,7 +22,7 @@ const Map = () => {
 
         <Annotation
           subject={[10, 51]} // Longitude and Latitude for Europe (e.g., near Germany)
-          dx={-90}
+          dx={-60}
           dy={-30}
           connectorProps={{
             stroke: "#5A5A5A",
@@ -67,7 +67,7 @@ const Map = () => {
 
         <Annotation
           subject={[-100, 60]} // Longitude and Latitude for Canada (near central Canada)
-          dx={-90}
+          dx={-40}
           dy={-30}
           connectorProps={{
             stroke: "#5A5A5A",
@@ -82,7 +82,7 @@ const Map = () => {
 
         <Annotation
           subject={[104, 35]} // Longitude and Latitude for China (near central China)
-          dx={-50}
+          dx={-30}
           dy={-20}
           connectorProps={{
             stroke: "#5A5A5A",
@@ -112,8 +112,8 @@ const Map = () => {
 
         <Annotation
           subject={[133, -25]} // Longitude and Latitude for Australia (near central Australia)
-          dx={-70}
-          dy={-20}
+          dx={-40}
+          dy={-10}
           connectorProps={{
             stroke: "#5A5A5A",
             strokeWidth: 2,

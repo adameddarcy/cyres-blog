@@ -1,0 +1,16 @@
+/* Styles for the reference component */
+.reference a {
+    color: #007bff; /* Blue color for the link */
+    text-decoration: none; /* Remove underline */
+    font-size: 0.8em; /* Slightly smaller text or symbol */
+}
+
+.reference a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+.reference svg {
+    width: 12px;
+    height: 12px;
+    vertical-align: middle; /* Align icon vertically with text */
+}

@@ -1,0 +1,37 @@
+/* Main container to hold the image */
+.responsive-image-container {
+    width: 100%; /* Full width of the container */
+    max-width: 1200px; /* Limit max width for larger screens */
+    margin: 0 auto; /* Center the container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsive image styling */
+.responsive-image {
+    width: 100%; /* Image takes up full width of its container */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 90vh; /* Prevent image from taking too much vertical space */
+    object-fit: contain; /* Ensure the image maintains its aspect ratio inside the container */
+}
+
+/* Media Queries for different screen sizes */
+@media (max-width: 1200px) {
+    .responsive-image-container {
+        padding: 10px; /* Add padding for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .responsive-image-container {
+        max-width: 90%; /* Reduce container size on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .responsive-image-container {
+        max-width: 100%; /* Full width on mobile */
+        padding: 0; /* No padding on smaller devices */
+    }
+}

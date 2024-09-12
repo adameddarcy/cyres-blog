@@ -1,0 +1,40 @@
+/* Main container for the two columns */
+.two-column-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px; /* Adds space between the columns */
+    margin: 20px 0;
+}
+
+/* Left and right column styles */
+.left-column, .right-column {
+    flex: 1; /* Both columns take up equal space */
+    padding: 20px;
+    background-color: white;
+}
+
+.right-column {
+    border-left: 1px solid #ddd;
+    border-top-left-radius: 8px;
+}
+
+/* Left column specific styling */
+.left-column {
+    max-width: 45%; /* Limit the width for responsive layout */
+}
+
+/* Right column specific styling */
+.right-column {
+    max-width: 45%; /* Limit the width for responsive layout */
+}
+
+/* Responsive behavior for mobile screens */
+@media (max-width: 768px) {
+    .two-column-container {
+        flex-direction: column; /* Stack columns vertically on small screens */
+    }
+    .left-column, .right-column {
+        max-width: 100%; /* Full width on small screens */
+    }
+}
