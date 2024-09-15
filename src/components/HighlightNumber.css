@@ -1,0 +1,49 @@
+/* CSS for HighlightNumber Component */
+
+.highlight-container {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .highlight-header {
+    font-size: 24px;
+    margin-bottom: 10px;
+    padding: 40px;
+  }
+  
+  .highlight-number {
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+    text-align: center;
+  }
+  
+  .circle-animate {
+    opacity: 1;
+  }
+  
+  .circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120px;
+    height: 120px;
+    border: 4px solid;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  @keyframes circleExpand {
+    0% {
+      transform: translate(-50%, -50%) scale(0);
+      opacity: 0;
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+    }
+  }
+  
