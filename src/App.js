@@ -32,11 +32,10 @@ function App() {
                     <VerticalNav.SubLink id="importance" label="The Importance of Cyber Resilience in 2024" />
                     <VerticalNav.SubLink id="TTR" label="Prepare, React, Recover, Respond" />
                   <VerticalNav.Link id="Pro" label="Profile Breakdown" />
-                    <VerticalNav.SubLink id="subsection1-2" label="Industry Breakdown" />
                     <VerticalNav.SubLink id="subsection1-3" label="Roles & Industries Breakdown" />
-                    <VerticalNav.SubLink id="subsection1-4" label="Cyber Resilience Principles" />
                   <VerticalNav.Link id="Results" label="Survey & Results" />
-                  <VerticalNav.SubLink id="results.1" label="Method & Survey" />
+                    <VerticalNav.SubLink id="subsection1-4" label="Cyber Resilience Principles" />
+                    <VerticalNav.SubLink id="results.1" label="Method & Survey" />
                     <VerticalNav.SubLink id="results.2" label="Results Discussion" />
                   <VerticalNav.Link id="Challenges" label="Challenges" />
                     <VerticalNav.SubLink id="subsection2-2" label="Granular Breakdown" />
@@ -53,7 +52,7 @@ function App() {
                               <Columns>
                                   <Columns.Left>
                                       <article>
-                                          Underst&ing the current state of cyber resilience is
+                                          Understanding the current state of cyber resilience is
                                           essential for guiding decision-makers & enabling organisations
                                           to improve resilience. In 2024, 39% of global businesses admit
                                           they “are not adequately prepared” to withst& sophisticated
@@ -86,8 +85,8 @@ function App() {
                                   a contested cyber environment <Reference link={'https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-172A.pdf'}/>.
                                   <br/><br/>
                                   Cyber resilience, as defined by the National Institute of
-                                  St&ards & Technology, refers to the ability of systems,
-                                  networks, & organisations to anticipate, withst&, recover
+                                  Standards & Technology, refers to the ability of systems,
+                                  networks, & organisations to anticipate, withstand, recover
                                   from, & adapt to adverse cyber events <Reference
                                   link={'https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-172A.pdf'}/>.
                                   The World Economic Forum’s
@@ -127,7 +126,7 @@ function App() {
                               behind, & the legacy technology of yesterday is no match for the speed &
                               sophistication of the modern adversary” <Reference link={'https://go.crowdstrike.com/global-threat-report-2024.html?utm_campaign=br&&utm_content=crwd-br&-eur-uki-en-psp-x-trl-x-tct-x_x_x_reports-x&utm_medium=sem&utm_source=goog&utm_term=crowdstrike%202024%20global%20threat%20report&cq_cmp=19634286389&cq_plac=&gad_source=1&gclid=CjwKCAjw6JS3BhBAEiwAO9waF-HanocnyDJmkRBEMWMEBdvXZkjc4751i2eoi4u6_iCXPlwjGiTW6BoCW3EQAvD_BwE'}/>.
                               <br/><br/>
-                              The l&scape of Cyber has shifted. Attackers are more advanced
+                              The landscape of Cyber has shifted. Attackers are more advanced
                               & better equipped, organisations are increasingly reliant on Cyber & in
                               response, the industry is groping toward a new reality based increasingly
                               on a ‘bend, don’t break’ model instead of pure prevention.
@@ -179,27 +178,26 @@ function App() {
                           <Title title={'Breakdown of respondents'} subtitle={'Geographies, Industries & Roles'}
                                  introduction={'A breakdown of the organisation profiles that took part in the survey'}/>
                       </Section>
-                      <VerticalNav.SubSection id="subsection1-2">
-                          <Section title="Industry Breakdown">
-                              <ResponsiveImageContainer src={industry} alt={"Industry Breakdown"}/>
-                          </Section>
-                      </VerticalNav.SubSection>
                       <VerticalNav.SubSection id="subsection1-3">
                         <Section title="Profile Breakdown">
-                          <article>
-                              The survey garnered respondents globally, ranging from
-                              management & individual contributor cyber leaders to C-
-                              suite members. As highlighted in Table I, the largest portion
-                              of respondents, at 40.80% were leaders with a Director or
-                              Senior director-level role.
-                              Respondents were located in a variety of locations, with the majority in Europe & the
-                              USA. The location breakdown is highlighted in Table I.
-                              As can be noted responses where collected from almost every major continent.
-                              Many respondents businesses operated in multiple locations or globally.
-                          </article>
+                            <h2>Industry Breakdown</h2>
+                                <ResponsiveImageContainer src={industry} alt={"Industry Breakdown"}/>
+                            <h2>Role Breakdown</h2>
+                                <ResponsiveImageContainer src={roles} alt={"Role Breakdown"}/>
                           <Columns>
                               <Columns.Left>
-                                  <ResponsiveImageContainer src={roles} alt={"Role Breakdown"}/>
+                                  <article>
+                                      The survey garnered respondents globally, ranging from
+                                      management & individual contributor cyber leaders to C-
+                                      suite members. The largest portion
+                                      of respondents, at 40.80% were leaders with a Director or
+                                      Senior director-level role.
+                                      Respondents were located in a variety of locations, with the majority in Europe & the
+                                      USA.
+                                      The location breakdown is highlighted in Table I.
+                                      As can be noted responses where collected from almost every major continent.
+                                      Many respondents businesses operated in multiple locations or globally.
+                                  </article>
                               </Columns.Left>
                               <Columns.Right>
                                   <LocationsTable/>
@@ -208,32 +206,33 @@ function App() {
                           <Map/>
                       </Section>
                       </VerticalNav.SubSection>
-                      <VerticalNav.SubSection id="subsection1-4">
-                        <Section title="World Economic Forum Cyber Resilience Principles">
-                          <article>
-                              This research is significant because it has the potential
-                              to inform & guide organisations in bolstering their cyber
-
-                              resilience capabilities. The study identifies challenges organ-
-                              isations face in implementing cyber resilience strategies by
-
-                              identifying critical global cyber resilience trends, challenge
-                              areas & strengths.
-                              To investigate cyber resilience across organisations globally,
-                              a survey was developed based on the World Economic Forum’s
-                              cyber resilience Framework & Index, categorising cyber
-                              resilience into principles, practices, & sub-practices <Reference link={'https://www3.weforum.org/docs/WEF_Cyber_Resilience_Index_2022.pdf'}/>. The
-                              analysis of this data has enabled the identification of strengths,
-                              weaknesses & trends.
-                          </article>
-                      </Section>
-                      </VerticalNav.SubSection>
                   </VerticalNav.Section>
 
                   <VerticalNav.Section id={'Results'}>
                   <Section>
                           <Title title={'Survey & Results'} subtitle={'Survey design & survey results discussion'}/>
                       </Section>
+
+                      <VerticalNav.SubSection id="subsection1-4">
+                          <Section title="World Economic Forum Cyber Resilience Principles">
+                              <article>
+                                  This research is significant because it has the potential
+                                  to inform & guide organisations in bolstering their cyber
+
+                                  resilience capabilities. The study identifies challenges organ-
+                                  isations face in implementing cyber resilience strategies by
+
+                                  identifying critical global cyber resilience trends, challenge
+                                  areas & strengths.
+                                  To investigate cyber resilience across organisations globally,
+                                  a survey was developed based on the World Economic Forum’s
+                                  cyber resilience Framework & Index, categorising cyber
+                                  resilience into principles, practices, & sub-practices <Reference link={'https://www3.weforum.org/docs/WEF_Cyber_Resilience_Index_2022.pdf'}/>. The
+                                  analysis of this data has enabled the identification of strengths,
+                                  weaknesses & trends.
+                              </article>
+                          </Section>
+                      </VerticalNav.SubSection>
                       <VerticalNav.SubSection id={'results.1'}>
                         <Section>
                         <h1>Method & Survey Design</h1>
@@ -270,63 +269,72 @@ function App() {
                         </Section>
                       </VerticalNav.SubSection>
                     <VerticalNav.SubSection id={'results.2'}>
-                      <Section>
-                        <h1>Results Discussion</h1>
-                        <Columns>
-                          <Columns.Left>
+                        <Section>
+                            <h1>Results Discussion</h1>
+                            <Columns>
+                                <Columns.Left>
+                                    <article>
+                                        77.08% of respondents state that promoting cyber security
+                                        is a primary focus for their organisation, compared to 20.83%
+                                        who say it is not. All respondents state cyber resilience is at
+                                        least moderately critical to their organisation,
+                                        <br/><br/>
+
+                                    </article>
+                                </Columns.Left>
+                                <Columns.Right>
+                                    <article>
+                                        while 66.67%
+                                        state it is very critical.
+                                        Additionally, 83.33% of respondents
+                                        believe cyber resilience is critical to their company as a whole
+                                        rather than the organisation they lead.
+                                    </article>
+                                </Columns.Right>
+                            </Columns>
+                            <Section>
+                                <HighlightPercentage header={'Cyber resilience is critical'} number={80.33}/>
+                                <br/><br/><br/>
+                            </Section>
+                            <br/><br/>
                             <article>
-                              77.08% of respondents state that promoting cyber security
-                              is a primary focus for their organisation, compared to 20.83%
-                              who say it is not. All respondents state cyber resilience is at
-                              least moderately critical to their organisation, while 66.67%
-                              state it is very critical.
-                              <br/><br/>
-                        
+                                Survey participants indexed themselves across 6 principles of cyber resilience.
+                                From this data challenges and trends have been identified.
+                                At a high level the greatest area of challenge identified has "Cultivating a culture of
+                                cyber resilience"
+                                across organisations.
+                                <ResponsiveImageContainer src={Principles} alt={"Principles of Cyber Resilience"}/>
                             </article>
-                          </Columns.Left>
-                          <Columns.Right>
-                            <HighlightPercentage header={'Cyber resilience is critical'} number={80.33}/>
-                          </Columns.Right>
-                        </Columns>
-                        <article>
-                          Additionally, 83.33% of respondents
-                              believe cyber resilience is critical to their company as a whole
-                              rather than the organisation they lead.
-                        </article>
-                        <br></br>
-                        <article>
-                          Survey participants indexed themselves across 6 principles of cyber resilience.
-                          From this data it challenges and trends have been identified. 
-                          At a high level the greatest area of challenge identified has "Cultivating a culture of cyber resilience"
-                          across organisations. 
-                          <ResponsiveImageContainer src={Principles} alt={"Principles of Cyber Resilience"}/>
-                        </article>
-                        <article>
-                          During the survey, respondents were asked to self-evaluate
-                          their cyber resilience on a scale of 1 to 100 before & after
-                          completing a self-guided evaluation. From this data, it has
-                          been discovered that most respondents rate themselves higher
-                          before completing a self-guided evaluation & rate themselves
-                          more accurately after completing a self-guided evaluation by
-                          approximately 36%,
-                        </article>
-                        <Columns>
-                          <Columns.Left>
-                            Organisations reported a Median self guided evaluation score of 66 out of 100.
-                            Organisations reported strong results in the areas of reducing exposure, driving risk based decisions,
-                            establishing group oversight of cyber resilience & focusing on common critical asets & core operations.
-                            Whereas organisation reported challenges in the areas of cultivating
-                          
-                          </Columns.Left>
-                          <Columns.Right>
-                          a culture of resilience across their organisations,
-                          promoting collaboration in the ecosystem & assuming comprised resources.
-                            <h1>Median Self Evaluation Index Score</h1>
-                            <HighlightNumber number={66} />
-                          </Columns.Right>
-                        </Columns>
-                        <ResponsiveImageContainer src={indexes} alt={'Indexes pre post & during self evaluation'}/>
-                      </Section>
+                            <article>
+                                During the survey, respondents were asked to self-evaluate
+                                their cyber resilience on a scale of 1 to 100 before & after
+                                completing a self-guided evaluation. From this data, it has
+                                been discovered that most respondents rate themselves higher
+                                before completing a self-guided evaluation & rate themselves
+                                more accurately after completing a self-guided evaluation by
+                                approximately 36%,
+                            </article>
+                            <ResponsiveImageContainer src={indexes} alt={'Indexes pre post & during self evaluation'}/>
+                            <Section>
+                                <HighlightNumber header={'Median Self Evaluation Index Score'} number={66}/>
+                                <br/><br/><br/>
+                            </Section>
+                            <Columns>
+                                <Columns.Left>
+                                    Organisations reported a Median self guided evaluation score of 66 out of 100.
+                                    Organisations reported strong results in the areas of reducing exposure, driving
+                                    risk based decisions,
+                                    establishing group oversight of cyber resilience & focusing on common critical asets
+                                    & core operations.
+
+                                </Columns.Left>
+                                <Columns.Right>
+                                    Whereas organisation reported challenges in the areas of cultivating
+                                    a culture of resilience across their organisations,
+                                    promoting collaboration in the ecosystem & assuming comprised resources.
+                                </Columns.Right>
+                            </Columns>
+                        </Section>
                     </VerticalNav.SubSection>
                   </VerticalNav.Section>
 
