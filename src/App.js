@@ -26,27 +26,10 @@ function App() {
   return (
       <>
           <div className='Container'>
-              <VerticalNav>
-                  <VerticalNav.Link id="Intro" label="Introduction" />
-                    <VerticalNav.SubLink id="Cyres" label="Cyber Resilience" />
-                    <VerticalNav.SubLink id="importance" label="The Importance of Cyber Resilience in 2024" />
-                    <VerticalNav.SubLink id="TTR" label="Prepare, React, Recover, Respond" />
-                  <VerticalNav.Link id="Pro" label="Profile Breakdown" />
-                    <VerticalNav.SubLink id="subsection1-3" label="Roles & Industries Breakdown" />
-                  <VerticalNav.Link id="Results" label="Survey & Results" />
-                    <VerticalNav.SubLink id="subsection1-4" label="Cyber Resilience Principles" />
-                    <VerticalNav.SubLink id="results.1" label="Method & Survey" />
-                    <VerticalNav.SubLink id="results.2" label="Results Discussion" />
-                  <VerticalNav.Link id="Challenges" label="Challenges" />
-                    <VerticalNav.SubLink id="subsection2-2" label="Granular Breakdown" />
-                    <VerticalNav.SubLink id="subsection2-3" label="Challenges of Reporting" />
-                    <VerticalNav.SubLink id="subsection2-4" label="Challenges by Mean" />
-                  <VerticalNav.Section>
                       <Section>
                           <Title title={'Organisational Cyber Resilience'} subtitle={'A Global Survey'}
                                  introduction={'Adam Edward DArcy'}/>
                       </Section>
-                      <VerticalNav.SubSection id="Intro">
                           <Section>
                               <Title title={'Introduction'} subtitle={'Research goals & overview'}/>
                               <Columns>
@@ -76,8 +59,6 @@ function App() {
                                   </Columns.Right>
                               </Columns>
                           </Section>
-                      </VerticalNav.SubSection>
-                      <VerticalNav.SubSection id="Cyres">
                           <Section>
                               <h1>Cyber Resilience</h1>
                               <article>
@@ -112,8 +93,6 @@ function App() {
                                   </Columns.Right>
                               </Columns>
                           </Section>
-                      </VerticalNav.SubSection>
-                      <VerticalNav.SubSection id='importance'>
                         <Section>
                           <h1>The Importance of Cyber Resilience in 2024</h1>
                             <article>
@@ -146,8 +125,6 @@ function App() {
                               approach & attitude towards delivering cyber resilience.” <Reference link={'https://www.weforum.org/agenda/2021/11/why-move-cyber-security-to-cyber-resilience/#:~:text=Jim%20Alkove&text=Frauds%20such%20as%20phishing%2C%20malware,sufficient%3B%20businesses%20need%20cyber%20resilience.'}/>.
                             </article>
                         </Section>
-                      </VerticalNav.SubSection>
-                      <VerticalNav.SubSection id="TTR">
                           <Section>
                               <h1>Prepare, React, Recover, Respond</h1>
                               <h2>Readiness is critical</h2>
@@ -170,15 +147,10 @@ function App() {
                               </article>
                               <ResponsiveImageContainer src={ttr_annotated} alt={"Time to resolve versus Time to execute annotated"}/>
                           </Section>
-                      </VerticalNav.SubSection>
-                  </VerticalNav.Section>
-
-                  <VerticalNav.Section id="Pro">
                       <Section>
                           <Title title={'Breakdown of respondents'} subtitle={'Geographies, Industries & Roles'}
                                  introduction={'A breakdown of the organisation profiles that took part in the survey'}/>
                       </Section>
-                      <VerticalNav.SubSection id="subsection1-3">
                         <Section title="Profile Breakdown">
                             <h2>Industry Breakdown</h2>
                                 <ResponsiveImageContainer src={industry} alt={"Industry Breakdown"}/>
@@ -205,15 +177,10 @@ function App() {
                           </Columns>
                           <Map/>
                       </Section>
-                      </VerticalNav.SubSection>
-                  </VerticalNav.Section>
-
-                  <VerticalNav.Section id={'Results'}>
                   <Section>
                           <Title title={'Survey & Results'} subtitle={'Survey design & survey results discussion'}/>
                       </Section>
 
-                      <VerticalNav.SubSection id="subsection1-4">
                           <Section title="World Economic Forum Cyber Resilience Principles">
                               <article>
                                   This research is significant because it has the potential
@@ -232,8 +199,6 @@ function App() {
                                   weaknesses & trends.
                               </article>
                           </Section>
-                      </VerticalNav.SubSection>
-                      <VerticalNav.SubSection id={'results.1'}>
                         <Section>
                         <h1>Method & Survey Design</h1>
                           <Columns>
@@ -267,8 +232,6 @@ function App() {
                             </Columns.Right>
                           </Columns>
                         </Section>
-                      </VerticalNav.SubSection>
-                    <VerticalNav.SubSection id={'results.2'}>
                         <Section>
                             <h1>Results Discussion</h1>
                             <Columns>
@@ -335,32 +298,20 @@ function App() {
                                 </Columns.Right>
                             </Columns>
                         </Section>
-                    </VerticalNav.SubSection>
-                  </VerticalNav.Section>
-
-                  <VerticalNav.Section id="Challenges">
                       <Section>
                           <Title title={'Challenges'} subtitle={'Where can organisations improve their cyber resilience'}/>
                       </Section>
-                      <VerticalNav.SubSection id="subsection2-2">
                           <Section title="Granular breakdown">
                               <ResponsiveImageContainer src={annotated} alt={'Granular Breakdown'}/>
                           </Section>
-                      </VerticalNav.SubSection>
-                      <VerticalNav.SubSection id="subsection2-3">
                           <Section title="Challenges of reporting / communicating">
                               <ResponsiveImageContainer src={report_challenges} alt={'Challenges of Reporting'}/>
                           </Section>
-                      </VerticalNav.SubSection>
-                      <VerticalNav.SubSection id="subsection2-4">
                           <Section title="Challenges by Mean">
                               <ResponsiveImageContainer src={mean_challenges} alt={'Mean Challenges'}/>
                           </Section>
-                      </VerticalNav.SubSection>
-                  </VerticalNav.Section>
-              </VerticalNav>
           </div>
-          {/*<Footer/>*/}
+          <Footer/>
       </>
   );
 }
